@@ -1,0 +1,22 @@
+.button {
+  color: $blue-color;
+  font-size: $regular-font-size;
+
+  background-color: #ffffff;
+  border: 2px solid $blue-color;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+
+  transition: 0.2s ease all;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $blue-color;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}

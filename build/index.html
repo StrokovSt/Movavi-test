@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Тестовое задание для Movavi</title>
+  <meta name="description" CONTENT="Movavi store">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <div style="display:none">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-alarm-clock" viewBox="0 0 16 16">
+  <image width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABPklEQVQ4jZVTi03DMBQ8ogwQT0A6QdMJaDew5AXoCJ0AmACYgC5gYSZo2QAmaDZwNwAdvSdMmoA4KbLz/O59zs8XOfgGwBMAjxN6AButjWxHAC2Ae61EArCuATwDWOIbrWx/gQmbakD+L5bVBGELYKFvpnV75gWgVq9tYVu5mPbc5OA/AOxdTCv2m4N/GbTXVxLMsDHyGFxMaejPAJ0p7WJ6GOH9gHyOsnVs4Uo/U5nbHPytaeNiYstvEn9el/2cURUAwI32l9SiCNDUBXHsOhfFMGHEt+ckXmsSiZlKnEQOnhUddL6uNJImyq8TqLE3H3JS5WLi5lHGLge/U5YhmbZdcWt35JqIrMKEYn+HHDxt77LNi8dm+Lo1C8DIBlbEUkkYkuzMOM4CUDiWxitiZgrL+Sif86veA4OeRAfwCYuXXuIc9UREAAAAAElFTkSuQmCC"></image>
+</symbol><symbol id="icon-burger" viewBox="0 0 30 24">
+  <image id="burger" width="30" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAYCAYAAADtaU2/AAAAfklEQVRIiWP8//9/AgMDw3wG+oJEkMX/6WwpGDBhiNDR4gsYorQHF0BBLcDAwFBAZ4snMA5QFA9sHI8si1mgtAOGDG3BARZoqZVAZ4sXjMySawGGKO3BAlgBQvfENVpyDX+LQQXIgFWL5xkYGAwwpGgLLozMkiuR7rYyMCQCAMwSKqCjmfFPAAAAAElFTkSuQmCC"></image>
+</symbol><symbol id="icon-cart" viewBox="0 0 17 17">
+  <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="17" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAABEklEQVQ4jZ2SsUpDQRBFz5hgI6RLLaQLpBHsktbWD9BvEDRdQDv/QPyGFOks7fwCEayCECxESApF1EKFK082ZPfN5qm5zb7Zu/fOvJlB0r6kJ0nPkvZYAXXgAbgGesBA0vs/bARcLSLpXKthYJFJCxgDNZdvOT6BdlqbNHR5qnHm7CVtVUpSvEhqOpNgdOme53HixJHJTlaS4lHSxlyz5lyg5W5SfAGHZvY2v7WYltQA7oB1oAO8Ogv4MLNkl+qlB12gGRZo28kXyYpjYmY3OXKz2FjXgTwm2UrM7F5SJ1T029LdZk1Cxw9CeBw3L+JPQzha9q9HUeH9v/LlEc+i72kmT5Yvj7iId0N4YWY/Y6jkgW++gYi+5CL81wAAAABJRU5ErkJggg=="></image>
+</symbol><symbol id="icon-guarantee" viewBox="0 0 32 32">
+  <image id="e9517b409a07478ca20fce025d70cec783426303" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADU0lEQVRYhbWXX2jNYRjHP+fYvxhmtmUjRmRkotZqF5qkFDciuUO5Iv+Wm6Vxoc0NFyzHjaHWlHJFlgvhctJCK2KIC0IYsb9mo2d9z5yd97fze3c23zr9Tr/3fd73eZ/3+3yf5xchPUSBmcAf4Eeaa4xgmvMmNczhOcAW4BqQC7TpfUQO/TcHbIMyoBE4AcwF8oAVwFpFpBsYAobTcSYIGdpkBpAJbACeAb3awJ5duoYB4AvQCmyXg9GANb1hxiuBe8CRBKNi4CTwHqgFcoD5wA7gEvBSzpgj6+V82g4sBuqApQFj5bqSZOQDR4G3itBhoMiZNQ6iUxE6wZy+pWic07opYZuuBpqAWakmTgDTgQtAj4ibm8o0S3d9X8SbKlj2XAEGgd0i87iIhk1IQKF4UOyMuDBePAC+Asvk1KSxT0Sr83R6o9I1pswZg3k+JBEiuqKYwmpE2yr7sJPdkBPLkwfOA3ud6cEoARqAbxIj+/XJiaxAi7FR6E7UlQw985UuYbDQrQOOAS+A21rD6sNnSXAqtEktNwNnE+fleea+Ee60Tn0GmK16kptwmDBcl3zbfpH4pt89vDf8VggN1cAuqWWvxnzwSvowqjV2qptAhYdxRAoXE5l+AU9VGwqc2cHYL86siUe9TCE9EDjdRVRZcxBol22XeoQwEiI7c2CVrRUVefAUFHRVH4HLOs1VVbxNEqcwFCmSH8z5qNKpH1gYYhiH3V+p9P0h0KEmxHQg25ntolRXZ/uOMHdYMlklRRt0TP7BvN8D7ARea26F0rNdV5EKmdrnSTLpTRh+ajAVipV+Qwm/fpF4iUcqV2mf2uSBRVqoxTEZC4vYArVmrSLgRYXVR0datE958oCRolkqVemYuTDxOaUoHHdGg1Gp9ZvFIwflItYdTzKV6P59sidb6/Zon8CiZTlcI4Y2OaOTQ6PWrQnTiniZHVDFmwo0iHgx306rUOLSp68fX4lNRoHs+1SAfERqFFae65XnncChoC5mHOSo9+uUfb2ke8KwarUNeKTU6RDzqwO62xy9b9A8q46PZT+pDtvSzZoNO1HcEQupleR3wHM9rTLae+OOqZx9jJhd6Lenb3dq8yyVTLBMhCyV7L8VIUutT3LwLvBGjA/vL4C/Ciq4L8n8rvUAAAAASUVORK5CYII="></image>
+</symbol><symbol id="icon-key" viewBox="0 0 32 32">
+  <image width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACsElEQVRYhb2XW4hNURjHf8ahiORSUpJbTSKXGiM57uLBg8uDkrxIeVA6NCLGbfJEueSFF2+i5M3Ei0wuJebBkBcPREbCGIxLx3BGK/9da/a3zz57n7PHv1ZzZn3/7/t/6/attckIo4EdQCvwEvgJdAFPgHPAsqyEwhgM7AW6gT61EvAe+Ob1uXYHmGci1IBRwA0F7wUuAEuAIV7I8cA2oEM8NzNbshDPAbcV9ClQbxj9UQcUlKiboY2GkRInJN4OjIxwdYIHgWvAHK9/HfBHyzPVeCXEFKAIfAEmlnE5JKHn2h8Nnu2Ykr9ivBLilAI0x9CvA8+U4KNQEsOATi1FuQHE4oWcJ8SQGoEe4K6XRJe3XCc1iJ3GswLGeBuvEvJeEgX5Bcdwtf6/WCGGwSw5thpLNFwSX+VzyWPMUN/NXKRbeQT8UllGf9wDJgPTgYfGquOSBt3ijk3h8ylCfJL+vk2bQKfOsFuKocaaHKvEbK/G+b7Wb7mxJMNwN/Jqj+Fuif8AZhprMrQoxuW0jns88ZXGmgwbVCF7VFETo0ni34EVVQjXafZ+a+rXG0YM9nniUQ+LTSq7Z1Ro/M3pquV2Fa7gOt5sIsRgvxzdzl8aQVurK7Yv9CD5qKXy+9uAuSZCDA7I0a3X4ghaXiIlldomibxS/wfgMXBWD5VUaPbE8xGO04DP4hSMtUYcVmBXwxeVCRVcLueNpUYcVWD32FgYEyo4kruMJSX8y6hFLxk38jXAg6xHF4fjGpFb1wURvK3AG+CdWk9WM+BwRMHcTTffWP/hqji/9B4sapdHJZsaRR2bhhjHIIFGY6kROVWu1xFX4whgtn6Py1o4QLkXUb0+PMIPz17DHIAEfPE2bTo0Sx2GnQHc2rpbypVQ14KPSvetN2ggBMO4Fbo03DSf/i/iwF836782qY+F0gAAAABJRU5ErkJggg=="></image>
+</symbol><symbol id="icon-phone" viewBox="0 0 31 33">
+  <image id="cfe336be26385a539b328bfecc45552ba9191b4a" width="31" height="33" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAhCAYAAAAh3nDkAAADKklEQVRYhb2XW4iNURTHf+ZkkEsZlxqhBmMe0AwRMSSGjEgpvAgvKEV5kUQeKEMeRCkPyCVFeaA0yjW5RUhyLZcp15HLMMyMyxzt5v91lrP3N+ecofnX1/lmr/9aa39rr8se2gkL28uRRXfgFpAEqoCOHsOgGDgshYPAUI+RGybJ8S+gGtigDXkYCbwTOXo+ARM8ZnZYA3wDfhp70XsHa6Ec+CzBcWAEcEB/1wNTcnQ8Ubo/9HsEuKr3C5ZYBnyXYD+Q0Lrb3S6tNwDTPRfx2KivbAb6GVZRusYOOdiXHg5hu+SNQKUnDcOFvEl6Z4MM4bFIYzxJClvNBqZ6Uh/DzDl/BV4CS4Au6cwoyTp5Jv7Gtmy+xGCyObJoE0mb7XnmjDM5r9XvL08SxkVggPLmq2r8N3DTHu8V7agsaKIFi6XYnMO5W7ivfSEbrqrGRbKdcr7aU2nBTJM8Kz1pPNKTd76O4AMwO1qcJsPXYsycknytJ4lHhdlsuaKVVOTc75BI0517jRZHB8wdlWy9J4lHvRw1qkv+VMjdsydda50cnAiYGy9DDSqhbOB4b9S8mrSZ2Oh1Bd6KUOFJU53uAdDDk8YjoQT7AiyIZQEr5OBhoBl0MqPRlVBnTzuMjurlSZvhIeSZ5r8rIC8EnprjSXiMeITatodiM2TmeFIYrLN08mM5RCBrLDXtcERAqRR4L46LVB+PkUIvoJu3mgG7Zfy5wh2KwCNxnmlDFgOBc+YWs8Wz0ApsotwHegeoPYHz4jSpXPOBQcArrb9Xrbv3vbnkiSupG1K8A/T1GC2brFLziCIVOa5WyN09rs7ckvI9KzEoAO4aw8PDNMYC180MP5NWrqM0FZ3sdKCUY1FgSrAuw1QrUZKGSqtEl4qkjivrDTjiSZNAqzxGdijSaI3rJbFIKGujyXRISZcrSqVf2wZdZgEfZeA1MNdjtI5Ko9smFCpzowS7rLmdCTPMnW5TBm5GuBb8xGziNrBcdzcLNzfmmRvR9n91HMHlwiLT8aKnRlVyyRyTezb/L8fpcPXusvhe2v9oLkldH1hmFbIadW2Em3j9VZquP7jrVArAH6wv91kcDaDoAAAAAElFTkSuQmCC"></image>
+</symbol><symbol id="icon-properties" viewBox="0 0 4 20">
+  <image id="elipsis" width="4" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAUCAYAAACqJ5zlAAAANUlEQVQYlWP4//9/w38EaGAEMRmQABMDGgAJNCIJNTKi6cCuhbBAAwMDA8ggEB6y7mBgaAQAa84qBFVwBIIAAAAASUVORK5CYII="></image>
+</symbol><symbol id="icon-secure" viewBox="0 0 27 32">
+  <image id="Path_512_Copy_3" data-name="Path_512 Copy 3" width="27" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAgCAYAAADjaQM7AAACY0lEQVRIib2WSWsUQRiGHzNqcIOgEOKGBhfwICR3IwgiARHBkIMH8ehtDJhLLh7ccCGCP8BA/oAXUcQVt4DeRBQDQXEBo7jjgjFm5Itvz/T0193paWbyQNPd9S1vV3XVV0UONgC3gXV5gmthG/AeKAHjwNZGiDQB/cCkxPp0/6PnOS4ip8he4Kl68wBYJdtq4KHaHwO98s/EAiXqAPYDw8Cb0JAdAuZHEjWrx+PyewUMAfuAzcAK+ZQJhqMUuSaAO0BRH5LGQuAgcFdx0Vy/7YNsrD8D34ELwEfgAzAG3Ad+pAgksQjYAqwHlunqUTvfgIsJgfXikunYDy1oljUSy18wsbmzKdakn9hISoFYocFCAdNif2epZ5Mm9jPDOkqiFRgBuhLsAZb/lz2/Be45s2depGV5qIzZetzoIiqMSIcnCkpjDzAKrJXPSr0HFeJsSqzxTDrTC/qTM1fYFCpnL7XNjIWETrkIz5egcJxT0BrnUmEgpt7Zdcx5etrlazoc0EuPc6umPyJ02HnE0yt/0ykrn4x1raZPvgPOkswZxbQHHqP6H1kWeKdrScbyvVb+MqelvisxLB+74yZRmxb35TqLXVHetqhhUF+x3YXkY4fyDcZFW+n5CjwHljprbdju/ELrqzUpslt7z82Yw01W7IBzS3m6Z4opqvvXgcXOms4S4Ibii6meIY4DU6pnHc4aT6dq7FTGylKFDcE7HcNOAC3O4z8tKggT8p9x6JKwKXtVw2LF+kiohtr9qNrNbn5uiteKnS13AteU1Hb2R6Ed3v6t2ety3g9jR+rzOkXb3d6zAfwD5m2lVFk1BGYAAAAASUVORK5CYII="></image>
+</symbol><symbol id="icon-support" viewBox="0 0 32 32">
+  <image width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADi0lEQVRYhcWXe2iOYRjGf7PZzIxtybGQHGIkidXQlPNymJyKIot/CElKDcso+8fS+AspihxyDjnkGHIo57MwTCZkNIdvhm6ub17v+237Dttc9fV97/c+z/3cz31f93U/TzTBIwqI1icOaAW0B5oBP4EfshSl51pDAyABGAgUAteBb4DP8f0dKAH2A7OBtkBMMA5Eef75F42AdGAZ0B/4BNwGLgKvgFJFohuQqogkAh+BtcAGORZWRCy0CxXap8AiIMkzyosJwDWgAjgN9FQUQ0ITIE+e7wCSw5i/GvgAPAC6BhHtStjAEcrres/b0JAFvAc2ASnBLt4RuAtcEgciRa7SOB1oWJOteKBA5BrueRs+DgNvgC41paKNQrbF8yYy9APKgPnSkIAwpo5UXQ8JNCBC3AKOqkwr4SwPy08m8BI4UwcOHFAk/illp1o11M4fA43FAz/subMUzqT4OfAQ+OJapDvQQjrgnG9z7qg804AXbu8sL9NU9xaB5Y7aNyfHAk+UHvvcA6a6CGWCc16MH+CyP07hN/vHtJlKmFcLgLfASeCQNH6SY/czgBNSxlwJzAWgucYki7g+LZLh2tx94BFwRBK+V/L9ewNWn+UqvxTlyGQ0x7ULvyZ0UEO6Iu1H7D6hyLgdaKl+kCdnxgOvgV3mgJFwjiYuVgkmKowVLge+Kh2DJFZXgSKgDzAF2C7xwjXX36rjxIXdwDpgqEXQHOilpuFzEyNABMzZfGAbsEIpKBBvLkvIDO2qaMd+zuyTvcE2KBb47BnqXTwbmAfsFEnfqazS1H43O1KSJ9bf8Fj6gzJFJSlG+amu28WLkDlKwzMJlp0NioG5mu9TJSWL6a89lv6iiaJRGqPDRbry4847MjhZMm1YqnwW6fdGhduI3BfoLYKVeCz9xTBF3g43v1umtd418ixRjixxhN8MjwJGa3yWjLR1GU5VE3Oqnb8Klut5jErxmJ8zCY6Tz03grMI50eN3eIjVicp04Jy4Y+v0cFpLkNoVSozM26a15ADiTLGkO0eSHRDJKqFmgV5GgE7qDfPd3bC+sFU5b/0/Fp+l01BGKAfT2kKm5H2lKqxeka0Ou0mXlzrZfUctcBw4BcxUk9mjUs7XAaVOFm8sJSyXcFWozL7ImVEq72oR1AWyCthcy6vThjUZ65h2/rNDjf/GXCVCuZ67YQtYji0NxnLT9VXAQUWh5gsp8AtSOc/dfTFIKQAAAABJRU5ErkJggg=="></image>
+</symbol></svg>
+  </div>
+
+  <header class="page-header">
+    <div class="page-header__container container">
+
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-movavi.png" width="96" height="22" alt="Логотип: Movavi">
+      </a>
+
+      <div class="page-header__cart">
+        <div class="page-header_cart-wrapper">
+          <svg class="page-header__cart-img" width="22" height="15">
+            <use xlink:href="#icon-cart"></use>
+          </svg>
+          <span class="page-header__cart-price">99.0 руб.</span>
+          <button class="page-header__cart-toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <nav class="page-header__main-nav">
+      <ul class="page-header__list">
+        <li class="page-header__item">
+          <a class="page-header__link" href="#">Первый раздел меню</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="#">Второй раздел меню</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="#">Третий раздел меню</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="page-header__shoping-container cart">
+      <a class="cart__link" href="#">Continue Shopping</a>
+      <h2 class="cart__shoping-heading">Shopping Cart</h2>
+      <ul class="cart__shoping-list">
+        <li class="cart__shoping-item">
+          <img class="cart__shoping-img" src="img/stikers-pack.png" width="134" height="75" alt="Такой то товар">
+          <div class="cart__info-container">
+            <p class="cart__shoping-description">ALCHEMY OF CRYSTALS STICKER PACK</p>
+            <span class="cart__shoping-price">99.0 руб</span>
+            <button class="cart__delete-button" type="button">Delete</button>
+          </div>
+        </li>
+      </ul>
+      <div class="cart__resume-container">
+        <span class="cart__resume-span">Total:</span>
+        <span class="cart__resume-span">99.0 руб.</span>
+        <a class="cart__checkout-button button">
+          Check Out
+          <span class="visually-hidden">Оформить покупки</span>
+        </a>
+        <button class="cart__delete-all-button" type="button">
+          <span>Delete All</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-main__headline-section headline-section">
+      <div class="headline-section__container container">
+        <h1 class="headline-section__heading">Movavi Video Suite for Windows</h1>
+        <ul class="headline-section__list">
+          <li class="headline-section__item">
+            <span class="headline-section__note">Best value</span>
+            <div class="headline-section__item-content">
+            <h2 class="headline-section__item-heading">Video Suite</h2>
+            <p class="headline-section__item-description">Lifetime / 1 PC</p>
+            <ul class="headline-section__features-list">
+              <li class="headline-section__features-item">
+                <h3 class="headline-section__features-heading">Video Editor Plus</h3>
+                <p class="headline-section__features-price">1490 руб.</p>
+              </li>
+              <li class="headline-section__features-item">
+                <h3 class="headline-section__features-heading">Video Converter Premium</h3>
+                <p class="headline-section__features-price">1290 руб.</p>
+              </li>
+              <li class="headline-section__features-item">
+                <h3 class="headline-section__features-heading">Screen Recorder</h3>
+                <p class="headline-section__features-price">990 руб.</p>
+              </li>
+            </ul>
+            </div>
+            <div class="headline-section__item-price">
+              <p class="headline-section__price headline-section__price--old">3 770 руб.</p>
+              <p class="headline-section__price headline-section__price--current">
+              <span class="headline-section__price-count">1 990</span>руб.</p>
+              <p class="headline-section__notice">Offer valid until September 30, 2018</p>
+              <button class="headline-section__button" type="button" data-id="1">Buy Now</button>
+            </div>
+          </li>
+          <li class="headline-section__item headline-section__item--offer">
+            <span class="headline-section__note">Best value</span>
+            <div class="headline-section__item-content">
+              <h2 class="headline-section__item-heading">Video Suite + Photo Editor</h2>
+              <p class="headline-section__item-description">Lifetime / 1 PC</p>
+              <ul class="headline-section__features-list">
+                <li class="headline-section__features-item">
+                  <h3 class="headline-section__features-heading">Video Editor Plus</h3>
+                  <p class="headline-section__features-price">1490 руб.</p>
+                </li>
+                <li class="headline-section__features-item">
+                  <h3 class="headline-section__features-heading">Video Converter Premium</h3>
+                  <p class="headline-section__features-price">1290 руб.</p>
+                </li>
+                <li class="headline-section__features-item">
+                  <h3 class="headline-section__features-heading">Screen Recorder</h3>
+                  <p class="headline-section__features-price">990 руб.</p>
+                </li>
+                <li class="headline-section__features-item headline-section__features-item--extended">
+                  <h3 class="headline-section__features-heading">Photo Editor</h3>
+                  <p class="headline-section__features-price">1 290 руб.</p>
+                  <ul class="headline-section__features-sublist">
+                    <li class="headline-section__features-subitem">
+                      <p class="headline-section__features-description">Edit, enhance and retouch  images</p>
+                    </li>
+                    <li class="headline-section__features-subitem">
+                      <p class="headline-section__features-description">Restore old photos</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="headline-section__item-price">
+              <span class="headline-section__price headline-section__price--old">5 060 руб.</span>
+              <p class="headline-section__price headline-section__price--current">
+                <span class="headline-section__price-count">2 490</span>руб.</p>
+              <p class="headline-section__notice">Offer valid until September 30, 2018</p>
+              <button class="headline-section__button" type="button" data-id="2">Buy now</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+      <section class="page-main__payments-section payments-section">
+        <div class="payments-section__container container">
+          <h2 class="payments-section__heading visually-hidden">Возможные способы оплаты</h2>
+          <ul class="payments-section__list">
+            <li class="payments-section__item">
+              <picture>
+                <img class="payments-section__image payments-section__image--mastercard" src="img/logo-mastercard.png" width="42" height="34" alt="mastercard">
+              </picture>
+            </li>
+            <li class="payments-section__item">
+              <picture>
+                <img class="payments-section__image payments-section__image--visa" src="img/logo-visa.png" width="47" height="15" alt="visa">
+              </picture>
+            </li>
+            <li class="payments-section__item">
+              <picture>
+                <img class="payments-section__image payments-section__image--paypal" src="img/logo-paypal.png" width="53" height="13" alt="paypal">
+              </picture>
+            </li>
+            <li class="payments-section__item">
+              <picture>
+                <img class="payments-section__image payments-section__image--discover" src="img/logo-discover.png" width="57" height="30" alt="discover">
+              </picture>
+            </li>
+            <li class="payments-section__item">
+              <picture>
+                <img class="payments-section__image payments-section__image--ae" src="img/logo-ae.png" width="60" height="34" alt="american express">
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="page-main__advantages-section advantages-section">
+        <div class="advantages-section__container container">
+          <h2 class="advantages-section__heading visually-hidden">Возможные способы оплаты</h2>
+          <ul class="advantages-section__list">
+            <li class="advantages-section__item">
+              <svg class="advantages-section___svg" width="34" height="34">
+                <use xlink:href="#icon-guarantee"></use>
+              </svg>
+              <h3 class="advantages-section__advantage">30 Day Money Back Guarantee</h3>
+              <p class="advantages-section__advantage-description">
+                If you experience technical or other problems that cannot be solved, you can get a complete refund
+                or your purchase price within 30 days. Check our Refund Policy to find out if you are eligible for
+                a full refund.
+              </p>
+            </li>
+            <li class="advantages-section__item">
+              <svg class="advantages-section___svg" width="34" height="34">
+                <use xlink:href="#icon-secure"></use>
+              </svg>
+              <h3 class="advantages-section__advantage">Totally Secure Payments</h3>
+              <p class="advantages-section__advantage-description">
+                Our payments are processed via the 2Checkout payment gateway. 2Checkout provides the highest
+                standarts pf online security. It guarantees the safety of your payments and personal information.
+              </p>
+            </li>
+            <li class="advantages-section__item">
+              <svg class="advantages-section___svg" width="34" height="34">
+                <use xlink:href="#icon-key"></use>
+              </svg>
+              <h3 class="advantages-section__advantage advantages-section__advantage--resized">What Do I Get?</h3>
+              <p class="advantages-section__advantage-description">
+                15 minutes after purchase, you will receive an email with a download link and activation key
+                to the account used to make the purchase. Use these to download and activate the program.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    
+
+
+    <section class="page-main__advantages-section advantages-section advantages-section--colored">
+      <div class="advantages-section__container container">
+        <h2 class="advantages-section__heading visually-hidden">Возможные способы оплаты</h2>
+        <ul class="advantages-section__list">
+          <li class="advantages-section__item advantages-section__item--support">
+            <svg class="advantages-section___svg" width="34" height="34">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+            <h3 class="advantages-section__advantage advantages-section__advantage--support">24/7 Payment Support</h3>
+            <p class="advantages-section__advantage-description">
+              Contact the 2Checkout 24/7 English language support service by phone at +31 88 000 0008(internetional)
+              with any payment-related questions.
+            </p>
+          </li>
+          <li class="advantages-section__item advantages-section__item--support">
+            <svg class="advantages-section___svg" width="34" height="34">
+              <use xlink:href="#icon-support"></use>
+            </svg>
+            <h3 class="advantages-section__advantage advantages-section__advantage--support">Movavi Software Support</h3>
+            <p class="advantages-section__advantage-description">
+              If you have any problems activating or using the programs, visit our Help Center for answers,
+              live support, sofware manuals, and quick user guides.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__container container">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-image" src="img/logo-movavi.png" width="96" height="22" alt="Логотип: Movavi">
+      </a>
+
+      <form class="page-footer__form" action="#" method="post">
+        <h2 class="page-footer__heading">Sign up for news and special offers</h2>
+        <fieldset class="page-footer__fieldset">
+          <label class="page-footer__label visually-hidden" for="user-email">E-mail:*</label>
+          <input class="page-footer__input" type="email" id="user-email" name="user-email" placeholder="user@email.com" required="">
+          <span class="page-footer__input-error">Введите ваш email в формате user@email.com</span>
+          <input class="page-footer__checkbox visually-hidden" type="checkbox" name="popup-consent" id="popup-consent" value="true" required="">
+          <label class="page-footer__label page-footer__label--consent" for="popup-consent">
+            By signing up, you consent to receive our marketing emails and agree to Movavi useing your personal data in
+            accordance with our <a class="page-footer__link" href="#">Privacy Policy</a>.
+            You also confirm that you meet the <a class="page-footer__link" href="#">minimum age requirements</a>.
+          </label>
+        </fieldset>
+        <button class="page-footer__button" type="submit">Sing Up</button>
+      </form>
+    </div>
+  </footer>
+
+  <script type="module" src="bundle.js"></script>
+
+</body>
+</html>

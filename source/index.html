@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Тестовое задание для Movavi</title>
+  <meta name="description" CONTENT="Movavi store">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <div style="display:none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
+  <header class="page-header">
+    <div class="page-header__container container">
+
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-movavi.png" width="96" height="22" alt="Логотип: Movavi">
+      </a>
+
+      <div class="page-header__cart">
+        <div class="page-header_cart-wrapper">
+          <svg class="page-header__cart-img" width="22" height="15">
+            <use xlink:href="#icon-cart"></use>
+          </svg>
+          <span class="page-header__cart-price">99.0 руб.</span>
+          <button class="page-header__cart-toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <nav class="page-header__main-nav">
+      <ul class="page-header__list">
+        <li class="page-header__item">
+          <a class="page-header__link" href="#">Первый раздел меню</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="#">Второй раздел меню</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="#">Третий раздел меню</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="page-header__shoping-container cart">
+      <a class="cart__link" href="#">Continue Shopping</a>
+      <h2 class="cart__shoping-heading">Shopping Cart</h2>
+      <ul class="cart__shoping-list">
+        <li class="cart__shoping-item">
+          <img class="cart__shoping-img" src="img/stikers-pack.png" width="134" height="75" alt="Такой то товар">
+          <div class="cart__info-container">
+            <p class="cart__shoping-description">ALCHEMY OF CRYSTALS STICKER PACK</p>
+            <span class="cart__shoping-price">99.0 руб</span>
+            <button class="cart__delete-button" type="button">Delete</button>
+          </div>
+        </li>
+      </ul>
+      <div class="cart__resume-container">
+        <span class="cart__resume-span">Total:</span>
+        <span class="cart__resume-span">99.0 руб.</span>
+        <a class="cart__checkout-button button">
+          Check Out
+          <span class="visually-hidden">Оформить покупки</span>
+        </a>
+        <button class="cart__delete-all-button" type="button">
+          <span>Delete All</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-main__headline-section headline-section">
+      <div class="headline-section__container container">
+        <h1 class="headline-section__heading">Movavi Video Suite for Windows</h1>
+        <ul class="headline-section__list">
+          <li class="headline-section__item">
+            <span class="headline-section__note">Best value</span>
+            <div class="headline-section__item-content">
+            <h2 class="headline-section__item-heading">Video Suite</h2>
+            <p class="headline-section__item-description">Lifetime / 1 PC</p>
+            <ul class="headline-section__features-list">
+              <li class="headline-section__features-item">
+                <h3 class="headline-section__features-heading">Video Editor Plus</h3>
+                <p class="headline-section__features-price">1490 руб.</p>
+              </li>
+              <li class="headline-section__features-item">
+                <h3 class="headline-section__features-heading">Video Converter Premium</h3>
+                <p class="headline-section__features-price">1290 руб.</p>
+              </li>
+              <li class="headline-section__features-item">
+                <h3 class="headline-section__features-heading">Screen Recorder</h3>
+                <p class="headline-section__features-price">990 руб.</p>
+              </li>
+            </ul>
+            </div>
+            <div class="headline-section__item-price">
+              <p class="headline-section__price headline-section__price--old">3 770 руб.</p>
+              <p class="headline-section__price headline-section__price--current">
+              <span class="headline-section__price-count">1 990</span>руб.</p>
+              <p class="headline-section__notice">Offer valid until September 30, 2018</p>
+              <button class="headline-section__button" type="button" data-id="1">Buy Now</button>
+            </div>
+          </li>
+          <li class="headline-section__item headline-section__item--offer">
+            <span class="headline-section__note">Best value</span>
+            <div class="headline-section__item-content">
+              <h2 class="headline-section__item-heading">Video Suite + Photo Editor</h2>
+              <p class="headline-section__item-description">Lifetime / 1 PC</p>
+              <ul class="headline-section__features-list">
+                <li class="headline-section__features-item">
+                  <h3 class="headline-section__features-heading">Video Editor Plus</h3>
+                  <p class="headline-section__features-price">1490 руб.</p>
+                </li>
+                <li class="headline-section__features-item">
+                  <h3 class="headline-section__features-heading">Video Converter Premium</h3>
+                  <p class="headline-section__features-price">1290 руб.</p>
+                </li>
+                <li class="headline-section__features-item">
+                  <h3 class="headline-section__features-heading">Screen Recorder</h3>
+                  <p class="headline-section__features-price">990 руб.</p>
+                </li>
+                <li class="headline-section__features-item headline-section__features-item--extended">
+                  <h3 class="headline-section__features-heading">Photo Editor</h3>
+                  <p class="headline-section__features-price">1 290 руб.</p>
+                  <ul class="headline-section__features-sublist">
+                    <li class="headline-section__features-subitem">
+                      <p class="headline-section__features-description">Edit, enhance and retouch  images</p>
+                    </li>
+                    <li class="headline-section__features-subitem">
+                      <p class="headline-section__features-description">Restore old photos</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="headline-section__item-price">
+              <span class="headline-section__price headline-section__price--old">5 060 руб.</span>
+              <p class="headline-section__price headline-section__price--current">
+                <span class="headline-section__price-count">2 490</span>руб.</p>
+              <p class="headline-section__notice">Offer valid until September 30, 2018</p>
+              <button class="headline-section__button" type="button" data-id="2">Buy now</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+      <section class="page-main__payments-section payments-section">
+        <div class="payments-section__container container">
+          <h2 class="payments-section__heading visually-hidden">Возможные способы оплаты</h2>
+          <ul class="payments-section__list">
+            <li class="payments-section__item">
+              <picture>
+                <img class="payments-section__image payments-section__image--mastercard" src="img/logo-mastercard.png" width="42" height="34" alt="mastercard">
+              </picture>
+            </li>
+            <li class="payments-section__item">
+              <picture>
+                <img class="payments-section__image payments-section__image--visa" src="img/logo-visa.png" width="47" height="15" alt="visa">
+              </picture>
+            </li>
+            <li class="payments-section__item">
+              <picture>
+                <img class="payments-section__image payments-section__image--paypal" src="img/logo-paypal.png" width="53" height="13" alt="paypal">
+              </picture>
+            </li>
+            <li class="payments-section__item">
+              <picture>
+                <img class="payments-section__image payments-section__image--discover" src="img/logo-discover.png" width="57" height="30" alt="discover">
+              </picture>
+            </li>
+            <li class="payments-section__item">
+              <picture>
+                <img class="payments-section__image payments-section__image--ae" src="img/logo-ae.png" width="60" height="34" alt="american express">
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="page-main__advantages-section advantages-section">
+        <div class="advantages-section__container container">
+          <h2 class="advantages-section__heading visually-hidden">Возможные способы оплаты</h2>
+          <ul class="advantages-section__list">
+            <li class="advantages-section__item">
+              <svg class="advantages-section___svg" width="34" height="34">
+                <use xlink:href="#icon-guarantee"></use>
+              </svg>
+              <h3 class="advantages-section__advantage">30 Day Money Back Guarantee</h3>
+              <p class="advantages-section__advantage-description">
+                If you experience technical or other problems that cannot be solved, you can get a complete refund
+                or your purchase price within 30 days. Check our Refund Policy to find out if you are eligible for
+                a full refund.
+              </p>
+            </li>
+            <li class="advantages-section__item">
+              <svg class="advantages-section___svg" width="34" height="34">
+                <use xlink:href="#icon-secure"></use>
+              </svg>
+              <h3 class="advantages-section__advantage">Totally Secure Payments</h3>
+              <p class="advantages-section__advantage-description">
+                Our payments are processed via the 2Checkout payment gateway. 2Checkout provides the highest
+                standarts pf online security. It guarantees the safety of your payments and personal information.
+              </p>
+            </li>
+            <li class="advantages-section__item">
+              <svg class="advantages-section___svg" width="34" height="34">
+                <use xlink:href="#icon-key"></use>
+              </svg>
+              <h3 class="advantages-section__advantage advantages-section__advantage--resized">What Do I Get?</h3>
+              <p class="advantages-section__advantage-description">
+                15 minutes after purchase, you will receive an email with a download link and activation key
+                to the account used to make the purchase. Use these to download and activate the program.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+
+    <section class="page-main__advantages-section advantages-section advantages-section--colored">
+      <div class="advantages-section__container container">
+        <h2 class="advantages-section__heading visually-hidden">Возможные способы оплаты</h2>
+        <ul class="advantages-section__list">
+          <li class="advantages-section__item advantages-section__item--support">
+            <svg class="advantages-section___svg" width="34" height="34">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+            <h3 class="advantages-section__advantage advantages-section__advantage--support">24/7 Payment Support</h3>
+            <p class="advantages-section__advantage-description">
+              Contact the 2Checkout 24/7 English language support service by phone at +31 88 000 0008(internetional)
+              with any payment-related questions.
+            </p>
+          </li>
+          <li class="advantages-section__item advantages-section__item--support">
+            <svg class="advantages-section___svg" width="34" height="34">
+              <use xlink:href="#icon-support"></use>
+            </svg>
+            <h3 class="advantages-section__advantage advantages-section__advantage--support">Movavi Software Support</h3>
+            <p class="advantages-section__advantage-description">
+              If you have any problems activating or using the programs, visit our Help Center for answers,
+              live support, sofware manuals, and quick user guides.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__container container">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-image" src="img/logo-movavi.png" width="96" height="22" alt="Логотип: Movavi">
+      </a>
+
+      <form class="page-footer__form" action="#" method="post">
+        <h2 class="page-footer__heading">Sign up for news and special offers</h2>
+        <fieldset class="page-footer__fieldset">
+          <label class="page-footer__label visually-hidden" for="user-email">E-mail:*</label>
+          <input class="page-footer__input" type="email" id="user-email" name="user-email" placeholder="user@email.com" required>
+          <span class="page-footer__input-error">Введите ваш email в формате user@email.com</span>
+          <input class="page-footer__checkbox visually-hidden" type="checkbox" name="popup-consent" id="popup-consent" value="true" required>
+          <label class="page-footer__label page-footer__label--consent" for="popup-consent">
+            By signing up, you consent to receive our marketing emails and agree to Movavi useing your personal data in
+            accordance with our <a class="page-footer__link" href="#">Privacy Policy</a>.
+            You also confirm that you meet the <a class="page-footer__link" href="#">minimum age requirements</a>.
+          </label>
+        </fieldset>
+        <button class="page-footer__button" type="submit">Sing Up</button>
+      </form>
+    </div>
+  </footer>
+
+  <script type="module" src="bundle.js"></script>
+
+</body>
+</html>

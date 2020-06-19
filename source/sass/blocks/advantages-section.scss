@@ -1,0 +1,131 @@
+.advantages-section {
+  background: $blue-light-color;
+
+  &--colored {
+    background: #f2f8ff;
+  }
+}
+
+.advantages-section__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 58px;
+  padding-bottom: 22px;
+
+  list-style: none;
+}
+
+.advantages-section__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: top;
+  margin-bottom: 30px;
+
+  &--support {
+    margin-bottom: 22px;
+
+    &:last-child {
+      margin-bottom: 38px;
+    }
+  }
+}
+
+.advantages-section___svg {
+  margin-right: 14px;
+}
+
+.advantages-section__advantage {
+  max-width: 220px;
+  min-height: 47px;
+  margin: 0;
+  margin-bottom: 2px;
+  padding: 0;
+  padding-top: 7px;
+
+  font-size: $regular-font-size;
+  line-height: 130%;
+
+  &--support {
+    min-height: 25px;
+    padding-top: 11px;
+    margin-bottom: 10px;
+  }
+}
+
+.advantages-section__advantage-description {
+  margin: 0;
+  padding: 0;
+
+  line-height: 150%;
+}
+
+/*       (sm - md)-width        */
+
+@media (min-width: $sm-width) {
+  .advantages-section__advantage {
+    max-width: 260px;
+  }
+}
+
+/*       lg-width        */
+
+@media (min-width: $lg-width) {
+  .advantages-section__list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+
+  .advantages-section__item {
+    max-width: 288px;
+    margin-right: 32px;
+    margin-bottom: 38px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--support {
+      max-width: 448px;
+    }
+  }
+
+  .advantages-section__advantage {
+    max-width: 220px;
+    &--resized {
+      min-height: inherit;
+    }
+  }
+}
+
+/*        xl-width        */
+
+@media (min-width: $xl-width) {
+  .advantages-section__list {
+    padding: 65px;
+    padding-bottom: 27px;
+  }
+
+  .advantages-section--colored .advantages-section__list {
+    padding-bottom: 17px;
+  }
+
+  .advantages-section__item {
+    max-width: 335px;
+
+    &--support {
+      max-width: 550px;
+    }
+  }
+
+  .advantages-section__advantage {
+    max-width: 100%;
+    min-height: inherit;
+
+    &--support {
+      min-height: inherit;
+      margin-bottom: 0;
+      padding-top: 0;
+    }
+  }
+}

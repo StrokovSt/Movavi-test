@@ -1,0 +1,119 @@
+.payments-section {
+  padding-top: 43px;
+
+  background: $blue-light-color;
+}
+
+.payments-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 45px;
+
+  list-style: none;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.1);
+}
+
+.payments-section__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-right: 24px;
+  padding: 0;
+
+  filter: grayscale(1);
+  transition: 0.5s ease all;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+.payments-section__image {
+  &--mastercard {
+    width: 28px;
+    height: 22px;
+  }
+
+  &--visa {
+    width: 35px;
+    height: 12px;
+  }
+
+  &--paypal {
+    width: 40px;
+    height: 10px;
+  }
+
+  &--discover {
+    width: 43px;
+    height: 23px;
+  }
+
+  &--ae {
+    width: 46px;
+    height: 40px;
+  }
+}
+
+/*       (sm - md)-width        */
+
+@media (min-width: $md-width) {
+  .payments-section {
+    padding-top: 52px;
+  }
+
+  .payments-section__item {
+    margin-right: 45px;
+  }
+
+  .payments-section__image {
+    &--mastercard {
+      width: 52px;
+      height: 36px;
+    }
+
+    &--visa {
+      width: 44px;
+      height: 15px;
+    }
+
+    &--paypal {
+      width: 54px;
+      height: 14px;
+    }
+
+    &--discover {
+      width: 60px;
+      height: 40px;
+    }
+
+    &--ae {
+      width: 80px;
+      height: 62px;
+    }
+  }
+}
+
+/*         lg-width        */
+
+@media (min-width: $lg-width) {
+  .payments-section {
+    padding-top: 49px;
+  }
+}
+
+/*        xl-width        */
+
+@media (min-width: $xl-width) {
+  .payments-section {
+    padding-top: 46px;
+  }
+}
