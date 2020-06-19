@@ -1,7 +1,7 @@
 import {timerController} from "./controllers/timer.js";
 import {cartController} from "./controllers/cart.js";
 
-// timerController();
+timerController();
 
 const main = document.querySelector(`.page-main`);
 const button = document.querySelector(`.page-header__toggle`);

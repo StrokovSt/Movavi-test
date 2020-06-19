@@ -33,7 +33,8 @@ export const cartController = () => {
     );
   };
 
-  const cartProducts = {};
+  let cartProducts = {};
+  cartProducts = getCartData();
 
   productList.addEventListener("click", function (evt) {
     if (evt.target.tagName === `BUTTON`) {
@@ -61,19 +62,19 @@ export const cartController = () => {
   });
 
   const renderCartProducts = () => {
-    const cartProdutcs = Object.values(getCartData());
-    cartProdutcs.forEach((product) => {
+    const cartMassiv = Object.values(cartProducts);
+    cartMassiv.forEach((product) => {
       for (let i = 0; i < product.productCount; i++) {
         render(cartShopingList, createCartItem(product.productId,
            product.productTitle, product.productPrice), `beforeend`);
       }
     });
 
-    console.log(cartProdutcs);
+    console.log(cartProducts);
   };
 
   const clearTheCart = () => {
-    const cartShopingItems = document.querySelectorAll(`.cart__shoping-item`);
+    let cartShopingItems = document.querySelectorAll(`.cart__shoping-item`);
     const cartItems = Array.prototype.slice.call(cartShopingItems);
     cartItems.forEach((item, i) => {
       item.remove();
@@ -87,36 +88,39 @@ export const cartController = () => {
     }
   };
 
+  const updateCorz = () => {
+    clearTheCart();
+    renderCartProducts();
+    cartContainer.classList.add(`cart--on`);
+    main.classList.add(`page-main--faded`);
+    document.addEventListener(`keydown`, onCartEscPress);
+  }
+
   const onCartClose = () => {
     if (cartContainer.classList.contains(`cart--on`)) {
-      clearTheCart();
       cartContainer.classList.remove(`cart--on`);
       main.classList.remove(`page-main--faded`);
       document.removeEventListener(`keydown`, onCartEscPress);
     } else {
-      clearTheCart();
-      renderCartProducts();
-      cartContainer.classList.add(`cart--on`);
-      main.classList.add(`page-main--faded`);
-      document.addEventListener(`keydown`, onCartEscPress);
+      updateCorz();
     }
   };
 
   cartShopingList.addEventListener("click", function (evt) {
     if (evt.target.tagName === `BUTTON`) {
-      const cartProdutcs = Object.values(getCartData());
-      const productItem = evt.target.parentNode.parentNode;
+      const cartMassiv = Object.values(cartProducts);
+
       const productItemId = evt.target.getAttribute('data-id');
 
-      cartProdutcs.forEach((product) => {
+      cartMassiv.forEach((product) => {
         if (product.productId === productItemId) {
           product.productCount -= 1;
+          setCartData(cartProducts);
         }
       });
 
-      setCartData(cartProducts);
-      console.log(cartProdutcs);
-      productItem.remove();
+      updateCorz();
+      console.log(cartProducts);
     }
   });
 
