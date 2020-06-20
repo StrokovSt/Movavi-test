@@ -1,7 +1,12 @@
 root: true
 
-env:
-  browser: true
+parserOptions:
+  sourceType: 'module'
+  ecmaVersion: 2015
 
-extends:
-  "htmlacademy/es5"
+env:
+  es6: true
+  browser: true
+  commonjs: true
+
+extends: 'htmlacademy/es6'

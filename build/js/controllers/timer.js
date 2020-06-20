@@ -10,6 +10,19 @@ export const timerController = () => {
     return JSON.parse(localStorage.getItem('timer'));
   }
 
+  const createPopup = (id, name, price) => {
+    return (
+      `<div class="result-popup">
+        <button class="result-popup__close-button" type="button">
+          <span class="visually-hidden">закрыть окно</span>
+        </button>
+        <h2 class="result-popup__heading">Срок акции истёк</h2>
+        <p class="result-popup__message">Приносим свои извинения, но акция завершилась.</p>
+        <button class="result-popup__button button">Понятно</button>
+      </div>`
+    );
+  };
+
   let counter = 0;
 
   if (getCartData() === null) {

@@ -182,19 +182,51 @@
   padding: 0;
 
   text-align: center;
-  text-decoration: line-through;
   opacity: 0.6;
 
   &--current {
+    display: none;
     margin-bottom: 32px;
 
     text-decoration: none;
+    opacity: 0;
+  }
+
+  &--old {
     opacity: 1;
   }
 }
 
-.headline-section__item--offer .headline-section__price--current {
-  margin-bottom: 23px;
+.headline-section__item--offer .headline-section__price {
+  &--current {
+    display: block;
+    margin-bottom: 23px;
+
+    text-decoration: none;
+    opacity: 1;
+  }
+
+  &--old {
+    position: relative;
+
+    opacity: 0.6;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      left: 48%;
+
+      display: block;
+      width: 37%;
+      height: 1px;
+
+      background-color: #000000;
+
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 
 .headline-section__price-count {
@@ -204,6 +236,14 @@
   padding: 0;
 
   font-size: 44px;
+}
+
+.headline-section__item--offer .headline-section__price-count {
+  font-size: 16px;
+
+  &--current {
+    font-size: 44px;
+  }
 }
 
 .headline-section__notice {
@@ -318,6 +358,7 @@
   }
 
   .headline-section__item-price {
+    align-items: flex-start;
     width: 50%;
     padding-left: 33px;
     text-align: left;
@@ -375,12 +416,17 @@
   .headline-section__item {
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
 
     width: 288px;
     margin: 0 16px;
     padding: 0 24px;
     padding-top: 30px;
     padding-bottom: 23px;
+  }
+
+  .headline-section__item--offer .headline-section__item {
+    align-items: flex-end;
   }
 
   .headline-section__item-content {
@@ -418,7 +464,9 @@
   .headline-section__item-price {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-self: flex-end;
+
+    align-items: flex-start;
     width: 100%;
     padding: 0;
     padding-top: 30px;
@@ -434,6 +482,11 @@
     text-align: center;
     margin: 0;
 
+    &--old {
+      align-self: flex-end;
+      margin-bottom: 35%;
+    }
+
     &--current {
       margin-bottom: 50px;
     }
@@ -446,7 +499,6 @@
       margin-bottom: 22px;
     }
   }
-
 
   .headline-section__features-sublist {
     margin-top: 23px;
@@ -473,6 +525,13 @@
 
   .headline-section__item {
     width: 350px;
+  }
+
+  .headline-section__price {
+    &--old {
+      align-self: flex-end;
+      margin-bottom: 20%;
+    }
   }
 
   .headline-section__button {

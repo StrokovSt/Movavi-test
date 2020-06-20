@@ -154,7 +154,7 @@
 
 @media (min-width: $sm-width) {
   .cart {
-    top: 63px;
+    top: 65px;
 
     width: 60%;
     max-width: 530px;
@@ -176,10 +176,11 @@
 
   .cart__shoping-list {
     margin-left: 0;
-    margin-bottom: 121px
+    margin-bottom: 121px;
   }
 
   .cart__shoping-description {
+    min-width: 242px;
     max-width: 242px;
 
     font-size: $regular-font-size;
@@ -191,12 +192,15 @@
     margin-left: auto;
 
     font-size: $regular-font-size;
+    line-height: 150%;
   }
 
   .cart__delete-button {
-    width: 100%;
+    width: 40px;
     margin-left: auto;
     font-size: 14px;
+
+    text-align: right;
   }
 
   .cart__checkout-button {

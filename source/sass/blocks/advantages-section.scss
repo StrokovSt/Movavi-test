@@ -91,7 +91,9 @@
   }
 
   .advantages-section__advantage {
+    width: 70%;
     max-width: 220px;
+
     &--resized {
       min-height: inherit;
     }
